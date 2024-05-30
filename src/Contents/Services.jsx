@@ -106,9 +106,9 @@ const Services = () => {
             {
                 Data?.map((item,index)=>{
                     return(
-                        <div key={index} id='slider-boxes' className=' rounded-xl transition ease-in-out duration-500 hover:scale-105'>  
+                        <div key={index} id='slider-boxes' className=' rounded-xl transition ease-in-out duration-500 hover:scale-105 border'>  
                            <div className=' flex flex-col justify-between gap-2 mt-2'>
-                            <img className=' w-[250px]  h-[250px] rounded-xl p-2 items-center' src={item.img} alt="" />
+                            <img className=' w-[280px]  h-[220px] rounded-xl  items-center' src={item.img} alt="" />
                             <h1 className='text-lg  font-normal'>{item.title}</h1>
                             <p className='test-md font-normal'>${item.price}</p>
                             <Star  stars={item.stars}/>

@@ -1,6 +1,6 @@
 import React, { useState ,useEffect} from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/pizza.png";
+import logo from "../assets/Pizza tune.png";
 import { Link } from "react-scroll";
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
 import { IoLocationSharp } from "react-icons/io5";
@@ -85,19 +85,23 @@ useEffect(() => {
     },
     {
       id: 3,
-      link: "typography",
+      link: "menu",
     },
     {
       id: 4,
+      link: "review",
+    },
+    {
+      id: 5,
       link: "contact",
     },
    
   ];
   return (
     <div className="max-w-screen h-20 bg-white text-black fixed top-0 left-0 right-0 z-50">
-    <div className="flex justify-around md:items-center">
-      <div className="md:w-[180px] w-[120px] hidden md:block ">
-        <img src={logo} alt="" />
+    <div className="flex justify-center md:justify-around md:items-center">
+      <div className="w-[80px] md:w-[150px]  hidden md:block ">
+        <img className=" " src={logo} alt="" />
       </div>
       <div className="flex flex-col justify between items-center gap-3 mt-1">
       {!hideContactInfo && (
@@ -105,16 +109,22 @@ useEffect(() => {
         <div className="flex justify-between gap-8">
           <div className="flex justify-between gap-1"> 
           <BsFillTelephoneOutboundFill color="black"/>
-          <p>01537506184</p>      
+          <p>0123456789</p>      
           </div>
           <div className="flex justify-between gap-1"> 
           <IoLocationSharp color="black"/>
-          <p>514 S. Magnolia St. Orlando, FL 32806</p>      
+          <p>5/10-b Block# A, Dhaka 1207</p>      
           </div>
           <div className="flex justify-between items-center gap-1">
-            < FaInstagram/>
-            <FaFacebookF/>
-             <FaTwitterSquare/>                 
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <FaInstagram />
+      </a>
+      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+        <FaFacebookF />
+      </a>
+      <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+        <FaTwitterSquare />
+      </a>              
           </div>
         </div>
       </div>
@@ -171,11 +181,8 @@ useEffect(() => {
     
 
       <div>
-      </div>
-      <div className="flex justify-around">
-
-      
-      <div className="flex justify-between ">
+      </div>   
+      <div className="flex justify-center  gap-5">
 
       <div
         onClick={() => {
@@ -193,16 +200,22 @@ useEffect(() => {
            <div className="flex flex-col justify-between gap-2 mt-2">
           <div className="flex justify-center gap-1"> 
           <BsFillTelephoneOutboundFill color="black"/>
-          <p>01537506184</p>      
+          <p>01234567899</p>      
           </div>
           <div className="flex justify-center gap-1"> 
           <IoLocationSharp color="black"/>
-          <p>514 S. Magnolia St. Orlando, FL 32806</p>      
+          <p>5/10-b Block# A, Dhaka 1207</p>      
           </div>
           <div className="flex justify-center items-center gap-1">
-            < FaInstagram/>
-            <FaFacebookF/>
-             <FaTwitterSquare/>                 
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <FaInstagram />
+      </a>
+      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+        <FaFacebookF />
+      </a>
+      <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+        <FaTwitterSquare />
+      </a>           
           </div>
         </div>
           {Links?.map((i) => {
@@ -226,11 +239,13 @@ useEffect(() => {
           })}
         </ul>
       )}
-      <div className="md:hidden">
-        <img src={logo} alt="" />
+      <div>
+        
+      </div>
+      <div className=" md:hidden">
+        <img className="w-[100px]" src={logo} alt="" />
       </div>
       
-      </div>
       <div onClick={()=>{setGal(!gal)}}>
 
          <CiMenuKebab className="hover-effect md:hidden mt-5"size={30}/>
@@ -256,6 +271,7 @@ useEffect(() => {
   </div>
 )}
       </div>
+      
     </div>
   </div>
   );

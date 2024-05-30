@@ -7,7 +7,7 @@ import {
     FaTwitterSquare,
   } from "react-icons/fa";
   import { MdAddIcCall,MdAttachEmail } from "react-icons/md"
-import pic from '../assets/gallery/pizza.png'
+import pic from '../assets/gallery/Pizza tune-white.png'
 const Footer = () => {
   return (
     <div className='w-screen h-fit bg-slate-800 mx-auto ' id='contact'>
@@ -64,9 +64,9 @@ const Footer = () => {
     </div>
       </div>
       <div className='border-b border-slate-500'>
-    <div className='flex flex-col md:flex-row md:justify-around justify-center gap-2 py-5'>
+    <div className='flex flex-col md:flex-row items-center md:justify-around justify-center gap-2 py-5'>
       <div>
-        <img className='items-center' src={pic} alt="" />
+        <img className='items-center w-[150px]'  src={pic} alt="" />
       </div>
       <div className='flex justify-center items-center gap-2'>
          <MdAttachEmail color='white'/>

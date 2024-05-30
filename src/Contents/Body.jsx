@@ -73,10 +73,10 @@ const Body = () => {
     <div className='absolute md:top-16 top-0 inset-0 flex flex-col justify-center items-center text-white'>
          <div className='grid md:grid-cols-2 justify-center items-center'>
            <div className='flex flex-col justify-center gap-1 md:gap-5 ml-24'>
-           <h1 className='text-xl md:text-5xl font-normal'>
+           <h1 className='text-3xl md:text-5xl font-normal'>
                     <span className='inline-block'>Best {animatedText}</span> 
                   </h1>
-             <p className='text-md md:text-lg font-normal mt-5'>We are leading technology solutions providing company all over the world doing over 40 years.</p>
+             <p className='text-lg md:text-xl font-normal mt-5'>We are a leading pizza shop providing delicious and innovative pizza solutions all over the Town.</p>
             <div className='flex flex-col md:flex-row justify-start gap-5'>
            <button className="text-white bg-orange-500  hover:text-black hover:bg-white hover:border-gray-400 font-semibold py-4 px-4 rounded w-[250px]">
                View Our Menu
